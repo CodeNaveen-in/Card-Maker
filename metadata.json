@@ -1,0 +1,5 @@
+{
+  "name": "Card-Maker",
+  "description": "Create beautiful, personalized cards for any occasion. Provide a name, occasion, and a short description, and let AI generate a unique message and image for your card.",
+  "requestFramePermissions": []
+}
