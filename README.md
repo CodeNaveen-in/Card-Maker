@@ -1,77 +1,93 @@
-# Card-Maker 🎴
+# 🎴 Card-Maker
 
-A web application that leverages the power of Google's Gemini AI to create beautiful, personalized, two-page occasion cards. 
+A web app that uses Google's Gemini AI to help you create beautiful, personalized occasion cards in just a few clicks.
 
-Users can specify a recipient, occasion, and some personal details, and the AI generates a unique card complete with a cover image, a warm greeting, and a heartfelt poem.
+Whether it's a birthday, anniversary, or just a thoughtful note, Card-Maker generates a two-page card with a custom cover image, greeting, and poem — all tailored to your input.
 
-## ✨ Project Abilities & Features
+## ✨ Features
 
-- **Two-Page Card Design**: Generates a complete card with a front cover (Page 1) and an inside message (Page 2).
-- **AI-Powered Content**:
-  - **Cover Image**: Creates a unique, high-quality image for the card's cover using Imagen 4.
-  - **Greeting & Poem**: Generates a short, occasion-appropriate greeting and a personalized, multi-line poem based on user input.
-  - **Smart Decorations**: Intelligently selects decorative borders and subtle page accessories that match the card's theme.
-- **Rich Personalization**: Takes the recipient's name, occasion, personal description, and sender's name to create a truly unique and thoughtful card.
-- **Interactive UI**: A clean, responsive interface built with React and Tailwind CSS that provides a real-time preview of the card.
-- **Download as PDF**: Users can download their final two-page card as a high-quality PDF, ready for digital sharing or printing.
-- **Print-Friendly**: A dedicated print function formats the card for easy printing directly from the browser.
+- **Two-Page Card Layout**  
+  - Page 1: A unique AI-generated cover image  
+  - Page 2: A warm greeting and a heartfelt poem  
 
-## 🛠️ Prerequisites
+- **AI-Powered Creativity**  
+  - Uses Gemini AI to write personalized messages and poems  
+  - Generates a themed cover image using Imagen 4  
+  - Adds decorative borders and accents to match the occasion  
 
-Before you begin, ensure you have the following installed and configured:
+- **Personalization Options**  
+  - Input recipient name, occasion, a short description, and your name  
+  - The AI uses this to craft a unique card every time  
 
-1.  **Node.js and npm**: This project is built with Node.js. You can download it from [nodejs.org](https://nodejs.org/).
-2.  **Google Gemini API Key**: The application requires a Gemini API key to communicate with the AI models.
-    - Visit the [Google AI for Developers](https://ai.google.dev/) website.
-    - Click on "**Get API key in Google AI Studio**" and follow the instructions to create your key.
-    - **Important**: Keep your API key secure and do not commit it to version control.
+- **Live Preview**  
+  - Built with React + Tailwind CSS  
+  - See your card update in real-time as you type  
 
-## 🚀 How to Navigate and Run the Project
+- **Download & Print**  
+  - Save your card as a high-quality PDF  
+  - Print directly from your browser with optimized formatting  
 
-Follow these steps to get the project running on your local machine.
+## 🛠️ Requirements
+
+Before you start, make sure you have:
+
+- **Node.js & npm**  
+  Download from [nodejs.org](https://nodejs.org/)
+
+- **Google Gemini API Key**  
+  Get it from [Google AI Studio](https://ai.google.dev/)  
+  > Click “Get API key” and follow the steps.  
+  > Keep your key private — don’t share or commit it.
+
+## 🚀 Getting Started
 
 ### 1. Clone the Repository
 
-Clone this project to your local machine using Git:
-
 ```bash
 git clone https://github.com/CodeNaveen-in/Card-Maker.git
-```
-
-### 2. Navigate to the Project Directory
-
-Change into the specific project folder:
-
-```bash
 cd Card-Maker
 ```
 
-### 3. Install Dependencies
-
-Install the necessary npm packages:
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Set Up Environment Variables
+### 3. Add Your API Key
 
-Create a new file named `.env` in the root of the `Card-Maker` directory. This file will store your secret API key.
-
-Add your Gemini API key to the `.env` file like this:
+Create a `.env` file in the root folder and add:
 
 ```
 API_KEY=your_gemini_api_key_here
 ```
 
-Replace `your_gemini_api_key_here` with the actual key you obtained from Google AI Studio.
+> Replace with your actual Gemini API key.
 
-### 5. Run the Application
-
-Start the local development server:
+### 4. Start the App
 
 ```bash
 npm run dev
 ```
 
-The application should now be running. Open your web browser and navigate to the local address provided in your terminal (usually `http://localhost:5173`) to see the Card Generator in action!
+Open your browser and go to `http://localhost:5173` to start creating cards!
+
+## 📦 Folder Structure (Quick Peek)
+
+```
+Card-Maker/
+├── public/           # Static assets
+├── src/
+│   ├── components/   # React components
+│   ├── pages/        # Page layout
+│   ├── styles/       # Tailwind CSS
+│   └── utils/        # API calls and helpers
+├── .env              # Your API key (not committed)
+├── package.json      # Project metadata and scripts
+```
+
+## 💡 Tips
+
+- Want to deploy it online? Try [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/)
+- Keep your `.env` file out of GitHub by using `.gitignore`
+- You can tweak styles easily with Tailwind classes
